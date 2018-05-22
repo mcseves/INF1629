@@ -25,11 +25,9 @@ O desenvolvimento do trabalho pode ser acompanhado no seguinte [repositório](ht
 
 ### Definição das Linguagens
 
-- Modelo: 
-	- SADT, para visualização do projeto na perspectiva de controle 
-	- MVC, para organização da estrutura do código
-- Desenvolvimento:
-	-  Lua
+- Modelo: SADT, para visualização do projeto na perspectiva de controle 
+- Arquitetura: MVC, para organização da estrutura do código
+- Desenvolvimento: Lua
 
 
 ### Cronograma
