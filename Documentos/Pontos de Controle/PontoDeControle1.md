@@ -25,9 +25,16 @@ O desenvolvimento do trabalho pode ser acompanhado no seguinte [repositório](ht
 
 ### Definição das Linguagens
 
-- Modelo: SADT, para visualização do projeto na perspectiva de controle 
+As linguagens que serão utilizadas no projeto são:
+
+- Definição: SADT, para visualização do projeto na perspectiva de controle 
 - Arquitetura: MVC, para organização da estrutura do código
 - Desenvolvimento: Lua
+
+
+### Planejamento
+
+Optamos por adotar o V-Model.
 
 
 ### Cronograma
