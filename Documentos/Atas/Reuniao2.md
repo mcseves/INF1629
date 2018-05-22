@@ -19,5 +19,9 @@
 - Atualização do cronograma para o novo modelo sugerido.
 - Inspecionar o código ja implementado.
 
+**Lembretes**
+
+- Utilzar pré e pós condições na documentação.
+
 
 
