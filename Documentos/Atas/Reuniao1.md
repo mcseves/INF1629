@@ -3,7 +3,7 @@
 #### Local e Hora: na sala L548, na PUC-Rio, às 7h30.
 
 
-**Presentes:** Gustavo Olenka, Maria Carolina Santos e Willian Simões, e o cliente.
+**Presentes:** Gustavo Olenka, Maria Carolina Santos, Willian Simões, e o cliente.
 
 **Ordem do Dia:** organização e discussão inicial do projeto.
 
