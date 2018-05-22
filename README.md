@@ -1,9 +1,9 @@
 # INF1629 - WERpapers
 
-- **Autores**: 
-* Gustavo Olenka - **[@gustavoolenka](https://github.com/gustavoolenka)**
-* Maria Carolina Marinho - **[@mcseves](https://github.com/mcseves)**
-* Willian Simões - **[@willsimoes](https://github.com/willsimoes)**
+### Autores
+	* Gustavo Olenka - **[@gustavoolenka](https://github.com/gustavoolenka)**
+	* Maria Carolina Marinho - **[@mcseves](https://github.com/mcseves)**
+	* Willian Simões - **[@willsimoes](https://github.com/willsimoes)**
 
 ### Livro Diário
 

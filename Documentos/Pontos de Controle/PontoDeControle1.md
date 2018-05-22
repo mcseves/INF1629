@@ -7,6 +7,7 @@ A equipe responsável pelo desenvolvimento é formada pelos seguintes alunos:
 - Maria Carolina Marinho
 - Willian Simões
 
+
 ### Projeto [WERpapers](http://wer.inf.puc-rio.br/WERpapers/)
 O WERpapers é uma biblioteca de acesso livre. Este site possui artigos apresentados no workshop de ER, e com links sobre cada artigo apresentado. O sistema foi desenvolvido em *Lua* e *PHP*, e possui um banco de dadosd *MySQL* com seu resumo, seus artigos, os autores, a data de lançamento, e atua em cima dos arquivos (Artigos) que ficam em um diretório.
 
@@ -16,11 +17,22 @@ O cliente deseja evoluir esse sistema para:
 - possibilitar a geração de “corpus”
 - consertar os links de redirecionamento dos pdfs
 
+
 ### Link do Repositório
 
 O desenvolvimento do trabalho pode ser acompanhado no seguinte [repositório](https://github.com/mcseves/INF1629).
 
-### O que será feito
+
+### Definição das Linguagens
+
+- Modelo: 
+	- SADT, para visualização do projeto na perspectiva de controle 
+	- MVC, para organização da estrutura do código
+- Desenvolvimento:
+	-  Lua
+
+
+### Cronograma
 | Data | Categoria | Tarefa |
 |--|--|--|
 | 17/05/2018 |Documentação| Estudo a respeito do projeto|
@@ -41,12 +53,6 @@ O desenvolvimento do trabalho pode ser acompanhado no seguinte [repositório](ht
 
 
 
-### Definição das Linguagens
 
-- Modelo: 
-	- SADT, para visualização do projeto na perspectiva de controle 
-	- MVC, para organização da estrutura do código
-- Desenvolvimento:
-	-  Lua
 
 
