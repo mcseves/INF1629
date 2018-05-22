@@ -16,6 +16,8 @@ O cliente deseja evoluir esse sistema para:
 	- pdf counter
 - possibilitar a geração de “corpus”
 - consertar os links de redirecionamento dos pdfs
+- atualizar as estatísticas de citação segundo o Google Scholar (funcionamento dos mais citados)
+
 
 
 ### Link do Repositório
