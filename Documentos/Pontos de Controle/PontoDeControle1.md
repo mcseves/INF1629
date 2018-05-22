@@ -45,7 +45,7 @@ Optamos por adotar o V-Model e seguiremos o modelo arquitetural MVC.
 | 17/05/2018 |Documentação| Estudo a respeito do projeto|
 | 22/05/2018 |Documentação| Entrega do ponto de controle 1 - definições iniciais|
 | 22/05/2018 |Documentação| Elaboração do modelo SADT do projeto|
-| 29/05/2018 |Documentação| Elaboração doa arquitetura com diagrama de classes e UML|
+| 29/05/2018 |Documentação| Elaboração da arquitetura com diagrama de classes e UML|
 | 29/05/2018 |BackEnd|Estudo da linguagem Lua |
 | 31/05/2018 |FrontEnd| Mudanças para adequar projeto aos requisitos novos do cliente| 
 | 31/05/2018 |BackEnd| Preparação do ambiente de desenvolvimento| 
