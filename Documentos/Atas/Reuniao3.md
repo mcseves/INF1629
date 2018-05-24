@@ -5,7 +5,7 @@
 
 **Presentes:** Maria Carolina Marinho, Willian Simões, e o cliente.
 
-**Ordem do Dia:** 
+**Ordem do Dia:** Elaboração do modelo SADT do projeto
 
 **Deliberações:**
 
