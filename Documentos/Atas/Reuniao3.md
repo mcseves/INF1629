@@ -8,13 +8,13 @@
 **Ordem do Dia:** Elaboração do modelo SADT do projeto
 
 **Deliberações:**
-
+- O SADT está sendo elaborado no site [draw.io](https://drive.google.com/file/d/1HAy4KxSCu0RNXnpZJzoznYDO71nZoZAg/view?usp=sharing)
 
 
 **Para a próxima semana:**
+- Terminar a elaboração do SADT
+- Estudar código, para elaboração da UML
 
-
-**Lembretes**
 
 
 
