@@ -3,7 +3,7 @@
 #### Local e Hora: online, às 7h30.
 
 
-**Presentes:** Maria Carolina Marinho, Willian Simões, e o cliente.
+**Presentes:** Gustavo Olenka, Maria Carolina Marinho e Willian Simões.
 
 **Ordem do Dia:** Elaboração do modelo SADT do projeto
 
