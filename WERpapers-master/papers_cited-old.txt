@@ -1,0 +1,43 @@
+<%
+  dofile"dao.lua"
+  local cfg = dofile"config.lua"
+  local most_cited = dofile(cfg.file_most_cited)
+  
+  diff = 0
+  if n > #most_cited then
+    i = #most_cited
+  else
+    pega o paper no limite de mais citados
+    c = most_cited[n].citations
+    descobre o primeiro a ter mais citacoes
+    for i=n+1, n+10 do
+      if most_cited[i].citations ~= c then
+        diff = i - n - 1
+        break
+      end
+    end
+    descobre o primeiro a ter menos citacoes e define o limite final
+    i = n - 1
+    while (i > 0) do
+      if most_cited[i].citations ~= c then
+        if (n - i) <= diff then
+          diff = i - n
+        end
+        break
+      end
+      i = i - 1
+    end
+  end
+  [=[
+  for i, v in ipairs(most_cited) do
+    if i > n + diff then break end
+    p = dao.get_paper_by_id(v.id)()
+    cgilua.print(string.format(
+      "%s - %s - <b>%s</b>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%s. <b><a href='pdf_counter.lua?wer=%s&"
+      .."file_name=%s' target='_blank'>[pdf]</a></b> <a href='%s'"
+      .." target='_blank'>[scholar]</a> <b>Cit: %s</b><br><br>\n", i,
+      p.name_conference, p.paper_title, p.author.." "..p.add_author, p.name_conference,
+      p.file_name, v.search_url, v.citations))
+  end
+  --]=]
+%>

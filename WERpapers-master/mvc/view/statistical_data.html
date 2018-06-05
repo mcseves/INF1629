@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+@title: Displays statistical data page
+@goal: Displays a page with the option to view different statistics about the event.
+@context: 
+	- location: view layer
+	- precondition: -TO DO-
+@actors: user
+@resources: bootstrap.min.css, dl_style.css, ajax_scripts.js, jquery-1.8.2.min.js, google chart API and statistics_logo.png
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta content="digital, library" name="keywords" />
+<meta content="Digital Library Statical Data" name="description" />
+
+<!-- @episode : adds javascript files used on page-->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/ajax_scripts.js"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+     
+</script>
+
+
+<!-- @episode : adds css stylesheets used on page-->
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/dl_style.css" />
+
+<script type="text/javascript">
+		
+// @episode : adds behaviour to the side menu itens. 		
+	$(document).ready(function(){
+
+
+		$("#home").click(function(){
+
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+		});
+
+		$("#keywordsUsedByAuthor").click(function(){
+	
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+
+// @episode : REQUEST KEYWORDS USED BY THE AUTHORS.
+			statisticalModule.keywordsUsedByAuthor();
+		});
+		$("#totalNumberOfPapers").click(function(){
+
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM			
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+
+// @episode : REQUEST TOTAL NUMBER OF PAPERS
+			statisticalModule.totalNumberOfPapers();
+
+		});
+		$("#amountOfPapersByLanguage").click(function(){
+
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+
+// @episode : REQUEST AMOUNT OF PAPERS BY LANGUAGE
+			statisticalModule.papersByLanguage();	
+	
+		});
+		$("#amountOfPapersByConference").click(function(){
+
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+
+// @episode : REQUEST AMOUNT OF PAPERS BY LANGUAGE
+			statisticalModule.papersByConference();	
+
+
+		});
+
+		$("#amountOfConferencesByCountry").click(function(){
+
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+
+// @episode : REQUEST AMOUNT OF CONFERENCES BY COUNTRY
+			statisticalModule.conferencesByCountry();	
+
+
+		});
+
+		$("#amountOfCitationsByKeyword").click(function(){
+
+// @episode : UPDATE THE INTERFACE TO SELECT MENU ITEM
+			statisticalInterfaceManagerModule.selectMenuItem(this.id);
+
+// @episode : REQUEST AMOUNT OF CITATIONS BY KEYWORD
+			statisticalModule.citationsByKeyword();	
+
+
+		});
+
+		
+	});	
+	</script>
+<title>Estatística</title>
+</head>
+<body>
+
+<!-- @episode : shows page header.-->	
+	<div id="page_title">
+		<div class="navbar">
+			<div class="navbar-inner">
+		    	<a class="brand" href="#">WERPapers Módulo Estatístico</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="container-fluid">
+  		<div class="row-fluid">
+		
+			<div class="span2 offset2">
+
+      
+<!-- @episode : shows the side menu with the available options.-->
+				<ul id="statistical_menu_ul" class="nav nav-list">
+					<li id="home_li" class="active"><a id="home" href="#"><i class="icon-home"></i>WER Papers</a></li>
+					<li id="keywordsUsedByAuthor_li"><a id="keywordsUsedByAuthor" href="#"><i class="icon-book"></i> Palavras chave utilizadas pelo autor</a></li>
+					<li id="totalNumberOfPapers_li"><a id="totalNumberOfPapers" href="#"><i class="icon-book"></i> Total de artigos</a></li>
+					<li id="amountOfPapersByLanguage_li"><a id="amountOfPapersByLanguage" href="#"><i class="icon-book"></i> Artigos por idioma</a></li>
+					<li id="amountOfPapersByConference_li"><a id="amountOfPapersByConference" href="#"><i class="icon-book"></i> Artigos por conferência</a></li>
+					<li id="amountOfConferencesByCountry_li"><a id="amountOfConferencesByCountry" href="#"><i class="icon-book"></i> Conferências por país</a></li>
+					<li id="amountOfCitationsByKeyword_li"><a id="amountOfCitationsByKeyword" href="#"><i class="icon-book"></i>Número de citações por palavra chave</a></li>
+
+				</ul>
+
+
+			</div>
+			
+			<div id="middle_content_div" class="span4">
+
+
+				<div id="home_div">
+					<h4>Bem vindo ao módulo estatístico...</h4>
+				</div>
+
+
+<!-- @episode : shows a table with the number of times each author used the keywords.-->
+				<div id="keywordsUsedByAuthor_div" class="table_chart_div">
+					<h4>Palavras-chave utilizadas por autores</h4>
+					<br />
+					<table id="keywords_used_table" class="table table-bordered">
+	              		<thead>
+	               		<tr>
+	                  		<th>Autor</th>
+	                  		<th>Palavra chave</th>
+	                  		<th>Número de ocorrências</th>
+	                	</tr>
+	              		</thead>
+		              	<tbody>
+	
+		              	</tbody>
+		            </table>
+				</div>
+
+<!-- @episode : -->
+				<div id="totalNumberOfPapers_div" class="table_chart_div">
+					<h4>Número total de artigos</h4>
+					<br />
+					<table id="total_num_papers_table" class="table table-bordered">
+	              		<thead>
+	               		<tr>
+	                  		<th>Total</th>
+	                   	</tr>
+	              		</thead>
+		              	<tbody>
+	
+		              	</tbody>
+		            </table>
+				</div>
+				
+<!-- @episode : -->				
+				<div id="amountOfPapersByLanguage_div" class="table_chart_div">
+					<h4>Artigos por idioma</h4>
+					<br />
+					<div id="amountOfPapersByLanguageChart_div"></div>
+					<table id="papers_by_language_table" class="table table-bordered">
+	              		<thead>
+	               		<tr>
+	                  		<th>Idioma</th>
+	                  		<th>Quantidade de Artigos</th>
+	                   	</tr>
+	              		</thead>
+		              	<tbody>
+	
+		              	</tbody>
+		            </table>
+				</div>
+
+<!-- @episode : -->
+
+				<div id="amountOfPapersByConference_div" class="table_chart_div">
+					<h4>Artigos por conferência</h4>
+					<br />
+					<div id="amountOfPapersByConferenceChart_div"></div>
+					<table id="papers_by_conference_table" class="table table-bordered">
+	              		<thead>
+	               		<tr>
+	                  		<th>Conferência</th>
+	                  		<th>Quantidade de Artigos</th>
+	                   	</tr>
+	              		</thead>
+		              	<tbody>
+	
+		              	</tbody>
+		            </table>
+				</div>
+
+<!-- @episode : -->
+				<div id="amountOfConferencesByCountry_div" class="table_chart_div">
+					<h4>Conferências por país</h4>
+					<br />
+					<div id="amountOfConferencesByCountryChart_div"></div>
+					<table id="conferences_by_country_table" class="table table-bordered">
+	              		<thead>
+	               		<tr>
+	                  		<th>País</th>
+	                  		<th>Quantidade de Conferências</th>
+	                   	</tr>
+	              		</thead>
+		              	<tbody>
+	
+		              	</tbody>
+		            </table>
+				</div>
+
+
+<!-- @episode : -->
+				<div id="amountOfCitationsByKeyword_div" class="table_chart_div">
+					<h4>Número de citações por palavra chave</h4>
+					<br />
+					<div id="amountOfCitationsByKeywordChart_div"></div>
+					<table id="citations_by_keyword_table" class="table table-bordered">
+	              		<thead>
+	               		<tr>
+	                  		<th>Keyword</th>
+	                  		<th>Quantidade de Citações</th>
+	                   	</tr>
+	              		</thead>
+		              	<tbody>
+	
+		              	</tbody>
+		            </table>
+				</div>				
+
+			</div>
+			<div class="span2" >
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
