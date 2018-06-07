@@ -16,7 +16,7 @@ O modelo de definição SADT está disponível [aqui](https://www.draw.io/?state
 
 ### Arquitetura
 Para definir a arquitetura foi criado um [diagrama de classes](https://www.draw.io/#G1GdugSNIjK-dm_Zlc3UIMKm0lG9sySdDm) utilizando a linguage UML.
-Como haverá um reunião com o cliente e a desenvolvedora do projeto legado, é capaz que a arquitetura sofra novas alterações.
+Como haverá um reunião com o cliente e a desenvolvedora do projeto legado, é capaz de haver novas alterações na arquitetura.
 
 
 
