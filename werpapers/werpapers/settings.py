@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'werpapers_manager.apps.WerpapersManagerConfig'
+    
+    # 'website.apps.WebsiteConfig'
 ]
 
 MIDDLEWARE = [

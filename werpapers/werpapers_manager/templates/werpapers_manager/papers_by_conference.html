@@ -16,8 +16,10 @@
 </head>
 
 <body>
+
+<!--titulo da conferencia-->
 <table width="100%" align=left>
-<tr>
+
  <H2>
      <td>
          <h1>
@@ -27,17 +29,36 @@
  </H2>
 </tr>
 </table>
-<table>
 
+<!--tabela de papers-->
+<table border = "1">
 
-  {% for p in conference.papers %}
-    {% for k,v in p.items %}
+    <thead>
     <tr>
-        <td>{{v}}</td>
+        <th>Paper</th>
+        <th>Citações </th>
+        <th>Downloads</th>
     </tr>
-    {% endfor %}
-  {% endfor %}
+
+    </thead>
+    <tbody>
+        <tr>
+          {% for p in conference.papers %}
+            <tr>
+            <td>
+            {% for k,v in p.items %}
+            <!--<tr>-->
+                {{v}}
+            <!--</tr>-->
+            {% endfor %}
+            </td>
+            </tr>
+          {% endfor %}
+    </tr>
+    </tbody>
+
 </table>
+
 </body>
 
 </html>

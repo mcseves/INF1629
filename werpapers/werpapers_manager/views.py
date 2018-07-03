@@ -8,7 +8,7 @@ context = {}
 def index(request):
     return render(request, 'werpapers_manager/index.html', context)
 def papers_by_conference(request, conference):
-    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'werpapers_manager\\' + conference + '.json')
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'werpapers_manager/' + conference + '.json')
     with open(path, encoding="utf8") as f:
         data = json.load(f)
     context = data
