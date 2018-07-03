@@ -1,0 +1,18 @@
+{
+    "conference": {
+      "title": "WER98 - Workshop em Engenharia de Requisitos 1998: Maringá-PR, Brasil",
+      "subtitle": "Julio Cesar S. P. Leite, Jaelson Freire B. de Castro (Ed.): Anais do WER98 - Workshop em Engenharia de Requisitos, Maringá-PR, Brasil, Outubro 12, 1998.",
+      "papers": [
+        {
+          "title": "1 - UMA FERRAMENTA BASEADA EM REGRAS HEURÍSTICAS PARA GERAR ESPECIFICAÇÕES DIAGRAMÁTICAS DE REQUISITOS ORIENTADAS A OBJETO.",
+          "authors": "Júlio Hartmann, Carolina Sturm Trindade, Stanley Loh, José Mauro V. de Castilho. Anais do WER98 - Workshop em Engenharia de Requisitos, Maringá-PR, Brasil, Outubro 12, 1998, pp 27-38.",
+          "abstract": "Este trabalho apresenta uma ferramenta para a geração automática de diagramas de especificação de requisitos orientados a objeto a partir de textos. São apresentadas as bases de conhecimento desenvolvidas, manualmente, na forma de regras heurísticas, as quais foram obtidas através de estudos de caso e análise de procedimentos junto a especialistas. A utilização de conhecimento humano diferencia a ferramenta apresentada da maior parte das ferramentas CASE existentes, que somente atuam nas etapas seguintes à Engenharia de Requisitos no processo de Engenharia de Software. As especificações geradas pela ferramenta são representações de diagramas conceituais orientados a objeto na metodologia OMT (Object Modelling Technique), e o texto analisado é obtido a partir de restrições sintáticas à linguagem natural."
+        },
+        {
+          "title": "2 - Derivación de objetos utilizando LEL y Escenarios en un caso real.",
+          "authors": "Mariana del FRESNO, Virginia MAUCO, Marcela RIDAO, Jorge DOORN* , Laura RIVERO. Anais do WER98 - Workshop em Engenharia de Requisitos, Maringá-PR, Brasil, Outubro 12, 1998, pp 89-98.",
+          "abstract": "El área de Ingeniería de Requisitos se encuentra en permanente evolución, y muchos de sus métodos y herramientas han tenido poca ejercitación en casos reales, por lo que algunas de las opiniones y conclusiones que se pueden recoger en la bibliografía especializada se han generado a partir de consideraciones teóricas o expresiones de deseo de sus autores. En [5] se ha propuesto un método para realizar una derivación preliminar de los objetos de un sistema, mediante el uso del Léxico Extendido del Lenguaje y Escenarios. Existen reportes acerca de algunas aplicaciones de este método, pero pocas de ellas han sido realizadas en situaciones controladas, prestando atención a la importancia relativa de cada uno de los pasos de las heurísticas empleadas. En el presente artículo se relata el proceso de aplicación de la metodología a un caso concreto y se detallan los resultados de las principales métricas utilizadas."
+        }
+      ]
+    }
+}

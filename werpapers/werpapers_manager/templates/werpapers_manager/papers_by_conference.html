@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>
-{{conference}}
+{{ conference.title }}
 </title>
 	<!--
 	jQuery plugin: Tablesorter 2.0 - Sort table using a link outside the table
@@ -21,11 +21,22 @@
  <H2>
      <td>
          <h1>
-             <a href=http://wtrans.inf.puc-rio.br>WTRANS13</a> - Workshop de Transparência em Sistemas 2013: Brasília, Brasil
+             {{ conference.title }}
          </h1>
      </td>
  </H2>
 </tr>
+</table>
+<table>
+
+
+  {% for p in conference.papers %}
+    {% for k,v in p.items %}
+    <tr>
+        <td>{{v}}</td>
+    </tr>
+    {% endfor %}
+  {% endfor %}
 </table>
 </body>
 
