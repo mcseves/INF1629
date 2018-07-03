@@ -9,6 +9,7 @@
 
 **Deliberações:**
 - A configuração do ambiente tem se mostrado mais difícil do que o planejado. O grupo não consegue integrar com o servidor.
+- Conversamos com o cliente, e foi frisada a necessitade de atualizar o código com anotações a respeito das mudanças, como pré, pós e justificativa.
 
 
 
