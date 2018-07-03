@@ -18,5 +18,8 @@ page_soup_htmlparser = bs(html_contents, 'html.parser')
 containers = page_soup_htmlparser.findAll(name='div', attrs={'class': 'gs_fl'})
 
 # seleção do texto desejado no container
-amount_articles = containers[2].text[0:23]
-print(amount_articles)
+amount_articles = containers[2].text
+amount = [s for s in amount_articles.split() if s.isdigit()]
+
+#o numero desejado se encontra em amount[0], a primeira posicao da lista
+
