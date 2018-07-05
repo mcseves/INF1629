@@ -1,3 +1,8 @@
+<!-- Template para uma única conferência -->
+<!-- Responsabilidade: view para mostrar os papers -->
+<!-- Pré Condição: estar ligado a view.py -->
+<!-- Pós Condição: parametros preenchidos com informações de cada artigo -->
+
 <html>
 <head>
 <title>
@@ -53,7 +58,7 @@
             {% endfor %}
             </td>
             <td>
-                Citações
+                Citado por {{amount}}
             </td>
             <td>
                 Downloads
