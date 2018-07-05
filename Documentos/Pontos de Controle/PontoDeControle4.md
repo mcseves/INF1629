@@ -9,7 +9,7 @@ A equipe responsável pelo desenvolvimento é formada pelos seguintes alunos:
 
 ## Replanejamento
 Houve um replanejamento no cronograma. O desenvolvimento passou a ser feito com o framework [Django](https://www.djangoproject.com), que usa python como linguagem.
-[Cronograma atualizado](https://docs.google.com/spreadsheets/d/1kH1tavMgmxV3_RoG5Pk3cWTGzGf5C3rF6pZLdxmP7QY/edit#gid=1115838130) e [diagrama de classes atualizado](https://drive.google.com/file/d/1GdugSNIjK-dm_Zlc3UIMKm0lG9sySdDm/view).
+[Cronograma atualizado](https://docs.google.com/spreadsheets/d/1kH1tavMgmxV3_RoG5Pk3cWTGzGf5C3rF6pZLdxmP7QY/edit#gid=1115838130).
 
 ## Django
 Por conta da mudança para Django, foram feitas algumas adaptações. O webcrawl é feito usando a biblioteca [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), e o deploy foi feito usando [Heroku](http://heroku.com). 
